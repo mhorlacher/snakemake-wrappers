@@ -2,7 +2,7 @@ rule ABodyBuilder2:
     input:
         "{prefix}.csv",
     output:
-        directory("output.{prefix}/"),
+        directory("{prefix}.pdbs/"),
     threads: 1
     wrapper:
-        "master/bio/bgzip"
+        "main/antibodies/ABodyBuilder2"
