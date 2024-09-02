@@ -1,0 +1,16 @@
+channels:
+  - conda-forge
+  - bioconda
+  - nodefaults
+
+dependencies:
+  - python=3.9
+  - pip
+
+  - openmm
+  - pdbfixer
+  - bioconda::anarci
+
+  - pip:
+    - tqdm
+    - ImmuneBuilder

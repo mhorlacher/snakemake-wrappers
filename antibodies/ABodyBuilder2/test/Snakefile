@@ -1,0 +1,8 @@
+rule ABodyBuilder2:
+    input:
+        "{prefix}.csv",
+    output:
+        directory("output.{prefix}/"),
+    threads: 1
+    wrapper:
+        "master/bio/bgzip"
