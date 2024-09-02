@@ -15,4 +15,5 @@ predictor = ABodyBuilder2()
 with open(snakemake.input[0]) as f:
     for i, line in tqdm.tqdm(enumerate(f), desc="Predicting", unit="seq"):
         vh, vl = line.strip().split(",")
-        predictor.predict(vh, vl).save(Path(snakemake.output[0]) / f"i.pdb")
+        structure = predictor.predict({'H': vh, 'L': vl})
+        structure.save(Path(snakemake.output[0]) / f"{i}.pdb")

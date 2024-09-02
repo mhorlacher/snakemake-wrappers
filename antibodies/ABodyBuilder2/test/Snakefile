@@ -5,4 +5,4 @@ rule ABodyBuilder2:
         directory("{prefix}.pdbs/"),
     threads: 1
     wrapper:
-        "main/antibodies/ABodyBuilder2"
+        "https://github.com/mhorlacher/snakemake-wrappers/raw/main/antibodies/ABodyBuilder2"

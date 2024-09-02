@@ -1,5 +1,7 @@
-# IDE
+# IDE and Development
 .vscode/
-
-# Development
+.env
 notebooks/
+
+# Snakemake
+**/.snakemake/
