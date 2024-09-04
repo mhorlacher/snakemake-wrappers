@@ -22,9 +22,10 @@ else:
     OUT_FASTA = snakemake.output.fasta
 
 # ---
+import tqdm
 from Bio import SeqIO
 
 with open(OUT_FASTA, 'w') as out_fa:
-    for record in SeqIO.parse(IN_FASTA, 'fasta'):
+    for record in tqdm.tqdm(SeqIO.parse(IN_FASTA, 'fasta')):
         print(f'>{record.id}', file=out_fa)
         print(record.seq.translate(), file=out_fa)
