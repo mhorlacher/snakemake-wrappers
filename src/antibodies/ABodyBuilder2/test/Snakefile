@@ -1,0 +1,9 @@
+rule ABodyBuilder2:
+    input:
+        "{prefix}.csv",
+    output:
+        directory("{prefix}.pdbs/"),
+    threads: 1
+    wrapper:
+        "file://../"
+        # NOTE: Find wrapper at https://github.com/mhorlacher/snakemake-wrappers/raw/main/antibodies/ABodyBuilder2

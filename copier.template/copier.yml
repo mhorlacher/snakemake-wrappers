@@ -1,0 +1,23 @@
+WRAPPER_NAME:
+    type: str
+    help: What is the wrapper's name?
+
+WRAPPER_AUTHOR:
+    type: str
+    help: Who is the author of the wrapper?
+    default: 'Marc Horlacher'
+
+WRAPPER_AUTHOR_EMAIL:
+    type: str
+    help: What is the email of the author of the wrapper?
+    default: 'marc.horlacher@gmail.com'
+
+WRAPPER_URL:
+    type: str
+    help: What is the URL of the wrapper (e.g. repository of wrapped tool)?
+    default: ''
+
+WRAPPER_DESC:
+    type: str
+    help: Give a short description of the wrapper
+    default: ''

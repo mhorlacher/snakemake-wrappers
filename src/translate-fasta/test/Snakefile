@@ -1,0 +1,7 @@
+rule translate_fasta:
+    input:
+        fasta = "{prefix}.fa"
+    output:
+        fasta = "{prefix}.faa"
+    wrapper:
+        "file://../"

@@ -1,0 +1,25 @@
+__author__ = "{{WRAPPER_AUTHOR}}"
+__copyright__ = "Copyright 2024, {{WRAPPER_AUTHOR}}"
+__email__ = "{{WRAPPER_AUTHOR_EMAIL}}"
+__license__ = "MIT"
+
+
+import argparse
+from pathlib import Path
+
+if 'snakemake' not in globals():
+    # Run from CLI for local testing
+    parser = argparse.ArgumentParser()
+    parser.add_argument("input", type=str)
+    parser.add_argument("-o", "--output", type=str)
+    args = parser.parse_args()
+
+    INPUT = args.input
+
+else:
+    # If we are running as a snakemake rule, skip the CLI parsing
+    INPUT = snakemake.input[0]
+
+
+# ---
+# TODO: Your code here

@@ -1,0 +1,9 @@
+name: translate-fasta
+description: Translate a FASTA file of RNA or DNA sequences to amino acid sequences
+url: -
+authors:
+  - Marc Horlacher
+input:
+  fasta: FASTA file of RNA or DNA sequences
+output:
+  fasta: FASTA file of amino acid sequences
